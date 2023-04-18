@@ -9,6 +9,12 @@ RUN dnf update -y && \
         python3-setuptools \
         python3-devel
 
+RUN dnf install -y gcc-c++ 
+RUN dnf install -y gcc
+RUN dnf install -y make 
+
+RUN dnf clean all
+
 RUN pip3 install cython
 RUN pip3 install orfipy
 
