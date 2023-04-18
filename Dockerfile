@@ -9,6 +9,7 @@ RUN dnf update -y && \
         python3-setuptools \
         python3-devel
 
+RUN pip3 install cython
 RUN pip3 install orfipy
 
 ENTRYPOINT ["orfipy"]
