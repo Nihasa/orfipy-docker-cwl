@@ -8,7 +8,7 @@ RUN dnf update -y && \
         python3-pip \
         python3-setuptools \
         python3-devel \
-        sqlite
+        sqlite-devel
 
 RUN dnf install -y gcc-c++ 
 RUN dnf install -y gcc
