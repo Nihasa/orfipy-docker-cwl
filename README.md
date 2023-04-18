@@ -1,6 +1,6 @@
-# tool-docker-cwl
+# orfipy-docker-cwl
 
-This repository provides a [Common Workflow Language (CWL)](https://www.commonwl.org/) tool for running the <tool link> program. The tool is packaged in a Docker container, allowing it to run on any system with Docker or Singularity installed.
+This repository provides a [Common Workflow Language (CWL)](https://www.commonwl.org/) tool for running the [orfipy](https://pypi.org/project/orfipy/) program. The tool is packaged in a Docker container, allowing it to run on any system with Docker or Singularity installed.
 
 ## Prerequisites
 
