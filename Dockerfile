@@ -13,6 +13,7 @@ RUN dnf update -y && \
 RUN dnf install -y gcc-c++ 
 RUN dnf install -y gcc
 RUN dnf install -y make 
+RUN dnf install -y zlib-devel 
 
 RUN dnf clean all
 
