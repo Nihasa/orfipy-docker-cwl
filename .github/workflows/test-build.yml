@@ -23,5 +23,4 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build \
-          -t ghcr.io/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}:${{ github.sha }} 
+          docker build -t ghcr.io/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}:${{ github.sha }} .
