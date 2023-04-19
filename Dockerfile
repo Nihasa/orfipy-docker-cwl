@@ -1,4 +1,4 @@
-FROM rockylinux/rockylinux-minimal:8.4
+FROM rockylinux/rockylinux:9.1-minimal
 
 RUN dnf update -y && \
     dnf install -y epel-release && \
