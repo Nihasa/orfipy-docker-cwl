@@ -1,4 +1,4 @@
-FROM rockylinux/rockylinux:8
+FROM rockylinux/rockylinux-minimal:8.4
 
 RUN dnf update -y && \
     dnf install -y epel-release && \
@@ -19,5 +19,7 @@ RUN dnf clean all
 
 RUN pip3 install cython
 RUN pip3 install orfipy
+
+RUN orfipy --version
 
 ENTRYPOINT ["orfipy"]
