@@ -6,7 +6,7 @@ on:
       - 'test*'
 
 jobs:
-  build-and-push:
+  build-image:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,4 +24,4 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-          -t ghcr.io/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}:${{ github.ref }} 
+          -t ghcr.io/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}:${{ github.sha }} 
